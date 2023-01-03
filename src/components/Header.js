@@ -12,7 +12,7 @@ const Header = () => {
         </a>
         <a>
           <img src="/images/search-icon.svg" alt="searchIcon" />
-          <span>Search</span>
+          <span>SEARCH</span>
         </a>
         <a>
           <img src="/images/watchlist-icon.svg" alt="watchlistIcon" />
