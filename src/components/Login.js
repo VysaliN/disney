@@ -79,10 +79,11 @@ const SignUp = styled.a`
   }
 `;
 const Description = styled.p`
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 1.5px;
   text-align: center;
   line-height: 1.5;
+  margin-bottom:10px;
 `;
 
 const LogoTwo = styled.img`

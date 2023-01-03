@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "../axios";
-import './Movies.css'
+import "./Movies.css";
 
-const Movies=({ title, fetchUrl, isLarge }) =>{
+const Movies = ({ title, fetchUrl, isLarge }) => {
   const [movies, setMovies] = useState([]);
   const imageURL = "http://image.tmdb.org/t/p/w342";
 
@@ -44,6 +44,6 @@ const Movies=({ title, fetchUrl, isLarge }) =>{
       </div>
     </div>
   );
-}
+};
 
 export default Movies;
