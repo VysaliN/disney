@@ -1,0 +1,65 @@
+[debug] [2023-01-27T09:21:54.920Z] ----------------------------------------------------------------------
+[debug] [2023-01-27T09:21:54.922Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mahes\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-01-27T09:21:54.922Z] CLI Version:   11.19.0
+[debug] [2023-01-27T09:21:54.923Z] Platform:      win32
+[debug] [2023-01-27T09:21:54.923Z] Node Version:  v16.14.2
+[debug] [2023-01-27T09:21:54.924Z] Time:          Fri Jan 27 2023 14:51:54 GMT+0530 (India Standard Time)
+[debug] [2023-01-27T09:21:54.924Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-27T09:21:54.995Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-27T09:21:54.996Z] > authorizing via signed-in user (vyshuammu2000@gmail.com)
+[debug] [2023-01-27T09:21:54.996Z] [iam] checking project disney-3b205 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-27T09:21:54.998Z] > refreshing access token with scopes: []
+[debug] [2023-01-27T09:21:54.999Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-01-27T09:21:54.999Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-27T09:21:55.991Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-01-27T09:21:55.991Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-27T09:21:56.024Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/disney-3b205:testIamPermissions [none]
+[debug] [2023-01-27T09:21:56.024Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/disney-3b205:testIamPermissions x-goog-quota-user=projects/disney-3b205
+[debug] [2023-01-27T09:21:56.024Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/disney-3b205:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-27T09:21:58.266Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/disney-3b205:testIamPermissions 200
+[debug] [2023-01-27T09:21:58.266Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/disney-3b205:testIamPermissions {}
+[debug] [2023-01-27T09:21:58.267Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project disney-3b205:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-01-27T09:21:58.268Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/disney-3b205 [none]
+[debug] [2023-01-27T09:21:59.647Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/disney-3b205 403
+[debug] [2023-01-27T09:21:59.648Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/disney-3b205 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-01-27T09:21:59.649Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-01-27T09:22:01.092Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\mahes\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\mahes\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project disney-3b205. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-01-27T09:24:08.989Z] ----------------------------------------------------------------------
+[debug] [2023-01-27T09:24:08.991Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mahes\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-01-27T09:24:08.992Z] CLI Version:   11.19.0
+[debug] [2023-01-27T09:24:08.992Z] Platform:      win32
+[debug] [2023-01-27T09:24:08.992Z] Node Version:  v16.14.2
+[debug] [2023-01-27T09:24:08.993Z] Time:          Fri Jan 27 2023 14:54:08 GMT+0530 (India Standard Time)
+[debug] [2023-01-27T09:24:08.993Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-27T09:24:09.067Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-27T09:24:09.067Z] > authorizing via signed-in user (vyshuammu2000@gmail.com)
+[debug] [2023-01-27T09:24:09.067Z] [iam] checking project disney-3b205 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-27T09:24:09.070Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/disney-3b205:testIamPermissions [none]
+[debug] [2023-01-27T09:24:09.070Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/disney-3b205:testIamPermissions x-goog-quota-user=projects/disney-3b205
+[debug] [2023-01-27T09:24:09.070Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/disney-3b205:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-27T09:24:11.151Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/disney-3b205:testIamPermissions 200
+[debug] [2023-01-27T09:24:11.152Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/disney-3b205:testIamPermissions {}
+[debug] [2023-01-27T09:24:11.152Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project disney-3b205:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-01-27T09:24:11.154Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/disney-3b205 [none]
+[debug] [2023-01-27T09:24:12.479Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/disney-3b205 403
+[debug] [2023-01-27T09:24:12.479Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/disney-3b205 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-01-27T09:24:12.481Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-01-27T09:24:13.493Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\mahes\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\mahes\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project disney-3b205. Please make sure the project exists and your account has permission to access it.
